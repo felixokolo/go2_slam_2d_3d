@@ -13,7 +13,7 @@ This setup contains all necessary ROS2 nodes to run and visualize ascynchronous 
 
 ## Installation
 
-To get started with the Go2 Gait Planner, follow these steps:
+To get started with the Go2 SLAM, follow these steps:
 
 ### Prerequisites
 
@@ -24,7 +24,21 @@ To get started with the Go2 Gait Planner, follow these steps:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/felixokolo/go2_gait_planner.git
-cd go2_gait_planner
-colcon build --packages-select go2_gait_planner
+git clone https://github.com/felixokolo/go2_slam_2d_3d
+```
+
+### Build
+```bash
+cd go2_slam_2d_3d
+sudo chmod +x build.sh
+source /opt/ros/foxy/setup.bash
+source ~/unitree_ros2/cyclonedds_ws/install/setup.bash # Change according to your installation path
+./build.sh
+```
+
+### Launch
+```bash
+# In the project directory
+source /opt/ros/foxy/setup.bash
+ros2 launch go2_rviz_display go2_rviz_display.launch.py
 ```
