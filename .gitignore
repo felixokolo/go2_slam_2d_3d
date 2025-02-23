@@ -6,3 +6,4 @@
 !/src/
 !/src/**/*
 /src/HesaiLidar_General_ROS/
+!build.sh
