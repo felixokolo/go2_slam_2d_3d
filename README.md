@@ -24,7 +24,7 @@ To get started with the Go2 SLAM, follow these steps:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/felixokolo/go2_slam_2d_3d
+git clone --recursive https://github.com/felixokolo/go2_slam_2d_3d
 ```
 
 ### Build
@@ -41,4 +41,10 @@ source ~/unitree_ros2/cyclonedds_ws/install/setup.bash # Change according to you
 # In the project directory
 source /opt/ros/foxy/setup.bash
 ros2 launch go2_rviz_display go2_rviz_display.launch.py
+
+# Launch SLAM
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=False
+
+# Run your ROS bag
+ros2 bag play liosam_bag
 ```
