@@ -2,3 +2,9 @@
 	path = src/HesaiLidar_General_ROS
 	url = https://github.com/felixokolo/HesaiLidar_General_ROS
 	branch = ROS2
+[submodule "src/odom_to_tf_ros2"]
+	path = src/odom_to_tf_ros2
+	url = https://github.com/felixokolo/odom_to_tf_ros2
+[submodule "src/pointcloud_to_laserscan"]
+	path = src/pointcloud_to_laserscan
+	url = https://github.com/felixokolo/pointcloud_to_laserscan
