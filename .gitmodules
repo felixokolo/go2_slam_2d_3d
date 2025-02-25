@@ -1,3 +1,4 @@
 [submodule "src/HesaiLidar_General_ROS"]
 	path = src/HesaiLidar_General_ROS
-	url = https://github.com/HesaiTechnology/HesaiLidar_General_ROS
+	url = https://github.com/felixokolo/HesaiLidar_General_ROS
+	branch = ROS2
